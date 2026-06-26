@@ -1,0 +1,20 @@
+{
+  "port": "4444",
+  "currentlyDrawioClientVersion": "v30.2.6",
+  "folder": "drawio",
+  "savingNameFileFormat": "timestamp",
+  "centeringDiagrams": true,
+  "interactiveDiagrams": true,
+  "diagramSizeInPopupHover": "100%",
+  "diagramThemeInPreviewMode": "light",
+  "diagramThemeInEditMode": "light",
+  "EditorTheme": "light",
+  "HiddenBorderInCanvas": false,
+  "HiddenLabelInCanvas": false,
+  "AlwaysFocusedInCanvas": false,
+  "HiddenBorderInFocusMode": false,
+  "TransparentDiagramBackgroundInCanavas": false,
+  "diagramThemeInCanvas": "light",
+  "scaleCopyDiagramAsImage": "4",
+  "clientAutoUpdate": false
+}
