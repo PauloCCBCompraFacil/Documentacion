@@ -180,8 +180,7 @@
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false,
-      "github-sync:Sync with Remote": false
+      "bases:Crear nueva base": false
     }
   },
   "active": "0041933f579dacce",
