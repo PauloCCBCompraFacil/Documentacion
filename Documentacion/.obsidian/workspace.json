@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "113f11ad5956b591",
+        "id": "98aa75e74d0b0649",
         "type": "tabs",
         "children": [
           {
-            "id": "635e13211861a7fb",
+            "id": "4412a7fb640f38d5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "drawio-editor-view-file-item",
               "state": {
-                "file": "CRS/new/pedidos/vitaminas/Vitaminas_v1.md",
-                "mode": "source",
-                "source": false
+                "file": "CRS/new/pedidos/vitaminas/FlujoVitaminas.drawio"
               },
-              "icon": "lucide-file",
-              "title": "Vitaminas_v1"
+              "icon": "shapes",
+              "title": "FlujoVitaminas"
             }
           }
         ]
@@ -78,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "08ad4e9082b0c22c",
@@ -186,13 +185,13 @@
       "drawio:Launch draw.io editor": false
     }
   },
-  "active": "635e13211861a7fb",
+  "active": "4412a7fb640f38d5",
   "lastOpenFiles": [
     "CRS/new/pedidos/vitaminas/FlujoVitaminas.png",
     "CRS/new/pedidos/vitaminas/FlujoVitaminas.drawio",
+    "CRS/new/pedidos/vitaminas/Vitaminas_v1.md",
     "Bienvenido.md",
     "CRS/new/pedidos/vitaminas/algo.drawio.md",
-    "CRS/new/pedidos/vitaminas/Vitaminas_v1.md",
     "CRS/new/pedidos/vitaminas/CONTEXT.md",
     "CRS/new/pedidos/vitaminas/Context.md",
     "CRS/new/pedidos/vitaminas/context.md",
