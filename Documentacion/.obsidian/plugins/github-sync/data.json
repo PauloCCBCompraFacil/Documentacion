@@ -1,0 +1,9 @@
+{
+  "remoteURL": "git@github-comprafacil:PauloCCBCompraFacil/Documentacion.git",
+  "gitLocation": "",
+  "syncinterval": 30,
+  "isSyncOnLoad": false,
+  "checkStatusOnLoad": true,
+  "noticeLevel": "ALL",
+  "showSyncSuccessNotice": true
+}
