@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "98aa75e74d0b0649",
+        "id": "aee1cb2e4ff6855b",
         "type": "tabs",
         "children": [
           {
-            "id": "4412a7fb640f38d5",
+            "id": "3dbc52510c581f30",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -187,11 +186,12 @@
       "drawio:Launch draw.io editor": false
     }
   },
-  "active": "4412a7fb640f38d5",
+  "active": "3dbc52510c581f30",
   "lastOpenFiles": [
+    "CRS/new/pedidos/vitaminas/FlujoVitaminas.drawio",
     "CRS/new/pedidos/vitaminas/FlujoVitaminas.png",
     "CRS/new/pedidos/vitaminas/Vitaminas_v1.md",
-    "CRS/new/pedidos/vitaminas/FlujoVitaminas.drawio",
+    "Sin título.canvas",
     "Sin título.md",
     "Compra Facil/Legacy/Inventario/Inventario Lima.md",
     "Compra Facil/Legacy/Inventario",
