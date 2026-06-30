@@ -11,12 +11,14 @@
             "id": "4412a7fb640f38d5",
             "type": "leaf",
             "state": {
-              "type": "drawio-editor-view-file-item",
+              "type": "markdown",
               "state": {
-                "file": "CRS/new/pedidos/vitaminas/FlujoVitaminas.drawio"
+                "file": "CRS/new/pedidos/vitaminas/Vitaminas_v1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "shapes",
-              "title": "FlujoVitaminas"
+              "icon": "lucide-file",
+              "title": "Vitaminas_v1"
             }
           }
         ]
@@ -51,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": " ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -72,12 +74,12 @@
               "title": "Marcadores"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "08ad4e9082b0c22c",
@@ -187,14 +189,14 @@
   },
   "active": "4412a7fb640f38d5",
   "lastOpenFiles": [
-    "Sin título.md",
+    "CRS/new/pedidos/vitaminas/FlujoVitaminas.png",
+    "CRS/new/pedidos/vitaminas/Vitaminas_v1.md",
     "CRS/new/pedidos/vitaminas/FlujoVitaminas.drawio",
+    "Sin título.md",
     "Compra Facil/Legacy/Inventario/Inventario Lima.md",
     "Compra Facil/Legacy/Inventario",
     "Compra Facil/Legacy",
     "Compra Facil",
-    "CRS/new/pedidos/vitaminas/FlujoVitaminas.png",
-    "CRS/new/pedidos/vitaminas/Vitaminas_v1.md",
     "Bienvenido.md",
     "CRS/new/pedidos/vitaminas/algo.drawio.md",
     "CRS/new/pedidos/vitaminas/CONTEXT.md",
