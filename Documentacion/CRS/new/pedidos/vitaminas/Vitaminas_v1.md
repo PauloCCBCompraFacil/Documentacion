@@ -27,7 +27,7 @@ ADD COLUMN is_vitamin BOOLEAN default  false;
 ```
 
 
-# Nuevos SP
+# Nuevos SPs
 
 ```sql
 CREATE DEFINER = super_scraper@`%` PROCEDURE SP_automation_get_pedidos_vitaminas(IN p_fecha_actual DATETIME)  
