@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2ee5a6f9d4dba161",
+        "id": "ecda5131e892dc5b",
         "type": "tabs",
         "children": [
           {
-            "id": "cadb0a2ddd29432e",
+            "id": "4adfc2433ee8fb5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Documentacion/Compra Facil/Legacy/Inventario/Inventario Lima.md",
+                "file": "Documentacion/Compra Facil/Legacy/Inventario/sp_cambiar_precio_ubicacion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Inventario Lima"
+              "title": "sp_cambiar_precio_ubicacion"
             }
           }
         ]
@@ -182,21 +182,45 @@
       "command-palette:Abrir paleta de comandos": false,
       "bases:Crear nueva base": false,
       "code-files:Create Code File": false,
-      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false,
-      "mermaid-tools:Open Mermaid Toolbar": false
+      "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "cadb0a2ddd29432e",
+  "active": "4adfc2433ee8fb5f",
   "lastOpenFiles": [
-    "Sin título.base",
     "Documentacion/Compra Facil/Legacy/Inventario/Inventario Lima.md",
+    "Documentacion/Compra Facil/Legacy/Inventario/sp_cambiar_precio_ubicacion.md",
+    "Documentacion/Compra Facil/Legacy/Inventario/sp_get_unidades_inventario_lima.md",
+    "Documentacion/Compra Facil/Legacy/Inventario/sp_registrar_inventario_lima.md",
+    "Documentacion/Compra Facil/Legacy/Inventario/SP_get_inventario_lima.md",
+    "Documentacion/Compra Facil/Legacy/Inventario/sp_listar_pedido_productos_para_lima.md",
+    "Documentacion/Compra Facil/Legacy/Inventario/sp_get_unidades_open_box.md",
+    "sp_asignar_unidad_lima_a_pedido.md",
+    "sp_exportar_unidades_lima_para_excel.md",
+    "sp_get_unidades_sin_empaque_original.md",
+    "sp_get_unidades_caja_golpeada.md",
+    "sp_get_unidades_nuevas.md",
+    "sp_asignar_precio_compra_unidades_lima.md",
+    "Sin título.md",
+    "Sin título.base",
+    "SP_actualizar_upc_inventario_lima.md",
+    "SP_listar_id_unidades_productos_inventario_lima.md",
+    "sp_exportar_movimientos_lima.md",
+    "sp_get_cantidades_estados_inventario_lima.md",
+    "sp_cantidades_por_estado_producto_unidades_lima.md",
+    "sp_listar_historial_unidades_lima.md",
+    "SP_get_inventario_lima_by_id.md",
+    "sp_listar_historial_unidad_lima.md",
+    "sp_desreservar_producto.md",
+    "sp_reservar_producto.md",
+    "Documentacion/CRS/new/pedidos/vitaminas/Vitaminas_v1.md",
+    "Documentacion/CRS/new/pedidos/vitaminas/FlujoVitaminas.png",
+    "Documentacion/Sin título.canvas",
     "Pasted image 20260626165807.png",
     "Documentacion/Bienvenido.md",
     "Documentacion/Compra Facil/Legacy/Inventario",
     "Documentacion/Compra Facil/Now",
     "Documentacion/Compra Facil/Legacy",
     "Documentacion/CRS/Sin nombre",
-    "Documentacion/Compra Facil",
-    "Documentacion/CRS/new/pedidos/vitaminas/FlujoVitaminas.png"
+    "Documentacion/Compra Facil"
   ]
 }

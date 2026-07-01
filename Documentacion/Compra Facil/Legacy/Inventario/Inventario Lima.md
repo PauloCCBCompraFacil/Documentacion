@@ -159,3 +159,42 @@ erDiagram
   pedidos_productos ||--o{ unidad_inventario_lima : asignado
   tb_combo_ensamblado ||--o{ unidad_inventario_lima : combo
 ```
+
+# Store Procedures de Lima
+
+Índice — clic en cada SP para saltar a su documentación
+
+| **FUNCIÓN**                                               | NOMBRE STORE PROCEDURE                              | LEGACY / NOW |
+| --------------------------------------------------------- | --------------------------------------------------- | ------------ |
+| Registrar unidades de productos en inventario Lima        | [[sp_registrar_inventario_lima]]                    | **NOW**      |
+| Listado de pedidos productos de un pedido                 | [[sp_listar_pedido_productos_para_lima]]            | **NOW**      |
+| Obtener inventario Lima (paginado)                        | [[SP_get_inventario_lima]]                          | **NOW**      |
+| Obtener unidades de inventario Lima (paginado)            | [[sp_get_unidades_inventario_lima]]                 | **LEGACY**   |
+| Cambiar precio y ubicación de un producto                 | [[sp_cambiar_precio_ubicacion]]                     | **NOW**      |
+| Reservar un producto de Lima                              | [[sp_reservar_producto]]                            |              |
+| Desreservar un producto de Lima                           | [[sp_desreservar_producto]]                         |              |
+| Asignar unidad Lima a un pedido                           | [[sp_asignar_unidad_lima_a_pedido]]                 |              |
+| Listar historial de una unidad Lima                       | [[sp_listar_historial_unidad_lima]]                 |              |
+| Obtener producto de inventario Lima por ID                | [[SP_get_inventario_lima_by_id]]                    |              |
+| Historial de unidades de inventario Lima (paginado)       | [[sp_listar_historial_unidades_lima]]               |              |
+| Cantidades por estado del producto de unidades Lima       | [[sp_cantidades_por_estado_producto_unidades_lima]] |              |
+| Cantidades por estado de inventario Lima por producto     | [[sp_get_cantidades_estados_inventario_lima]]       |              |
+| Exportar movimientos de Lima a Excel                      | [[sp_exportar_movimientos_lima]]                    |              |
+| Listar IDs de unidades de un producto (excluye en_pedido) | [[SP_listar_id_unidades_productos_inventario_lima]] |              |
+| Actualizar UPC de un producto en inventario Lima          | [[SP_actualizar_upc_inventario_lima]]               |              |
+| Asignar precio de compra a unidades Lima                  | [[sp_asignar_precio_compra_unidades_lima]]          |              |
+| Obtener unidades en estado "nuevo"                        | [[sp_get_unidades_nuevas]]                          |              |
+| Obtener unidades en estado "open box"                     | [[sp_get_unidades_open_box]]                        |              |
+| Obtener unidades en estado "caja golpeada"                | [[sp_get_unidades_caja_golpeada]]                   |              |
+| Obtener unidades "sin empaque original"                   | [[sp_get_unidades_sin_empaque_original]]            |              |
+| Exportar unidades Lima disponibles a Excel                | [[sp_exportar_unidades_lima_para_excel]]            |              |
+| Registrar publicaciones MELI (desde Excel)                | [[sp_registrar_publicaciones_meli]]                 |              |
+| Registrar configuración WEB de un producto                | [[sp_registrar_config_web_lima]]                    |              |
+| Actualizar configuración de publicación (MELI/WEB)        | [[sp_actualizar_config_publicacion_lima]]           |              |
+| Obtener unidad escaneada Lima                             | [[SP_get_unidad_escaneada_lima]]                    |              |
+| Obtener pedidos para asignación de Lima por SKU           | [[sp_get_pedidos_para_asignacion_de_lima]]          |              |
+| Cambiar estado de una unidad Lima                         | [[sp_cambiar_estado_unidad_lima]]                   |              |
+| Obtener unidades en técnico                               | [[sp_get_unidades_en_tecnico_lima]]                 |              |
+| Obtener unidades en merma                                 | [[sp_get_unidades_merma_lima]]                      |              |
+| Cambiar SKU de una unidad Lima                            | [[sp_cambiar_sku_unidad_lima]]                      |              |
+| Exportar stock Lima para ecommerce                        | [[sp_exportar_stock_lima_ecommerce]]                |              |
