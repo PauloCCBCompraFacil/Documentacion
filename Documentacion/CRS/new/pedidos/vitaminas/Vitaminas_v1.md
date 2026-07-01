@@ -21,6 +21,11 @@ CREATE TABLE pedidos_vitaminas_notificaciones (
 ```
 
 
+```sql
+ALTER TABLE pedidos_productos  
+ADD COLUMN is_vitamin BOOLEAN default  false;
+```
+
 
 # Nuevos SP
 
