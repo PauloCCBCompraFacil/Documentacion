@@ -30,7 +30,8 @@ ADD COLUMN is_vitamin BOOLEAN default  false;
 # Nuevos SPs
 
 ```sql
-CREATE DEFINER = super_scraper@`%` PROCEDURE SP_automation_get_pedidos_vitaminas(IN p_fecha_actual DATETIME)  
+create  
+    definer = super_scraper@`%` procedure SP_automation_get_pedidos_vitaminas(IN p_fecha_actual datetime)  
 BEGIN  
     -- 1. Agrupamos las notificaciones previas que tu script externo ha insertado en la tabla de control  
     WITH historial_notificaciones AS (  
@@ -44,60 +45,62 @@ BEGIN
                 numero_pedido,  
                 created_at,  
                 ROW_NUMBER() OVER (PARTITION BY numero_pedido ORDER BY created_at) AS rn  
-            FROM pedidos_vitaminas_notificaciones 
+            FROM pedidos_vitaminas_notificaciones   
             WHERE numero_pedido IS NOT NULL  
         ) ranked  
         GROUP BY numero_pedido  
     ),  
-      
+  
     -- 2. Universo base: Pedidos activos de la categoría 22 que NO tienen el documento subido  
     pedidos_base AS (  
         SELECT DISTINCT  
             ped.numero_pedido,  
             ped.fecha_pedido,  
-            ped.tiendas  
+            pp.id_cliente_facturacion  
         FROM pedidos ped  
         INNER JOIN pedidos_productos pp ON ped.id_pedido = pp.id_pedido  
-        LEFT JOIN productos prod ON pp.sku_cf = prod.sku COLLATE utf8mb4_unicode_ci AND prod.is_enable   
-LEFT JOIN categories cat ON prod.category_code_id = cat.id  
-        LEFT JOIN documentos_pedidos dp ON ped.id_pedido = dp.id_pedido   
-AND pp.id_cliente_facturacion = dp.id_cliente_facturacion  
+        LEFT JOIN productos prod ON pp.sku_cf = prod.sku COLLATE utf8mb4_unicode_ci AND prod.is_enable  
+        LEFT JOIN categories cat ON prod.category_code_id = cat.id  
+        LEFT JOIN documentos_pedidos dp ON ped.id_pedido = dp.id_pedido  
+                                       AND pp.id_cliente_facturacion = dp.id_cliente_facturacion  
                                        AND dp.tipo_documento = 'VITAMINAS'  
         WHERE cat.principal_id = 22  
           AND dp.id_documento_pedido IS NULL -- Si el cliente lo sube, el pedido desaparece automáticamente aquí  
     )  
   
     -- 3. Tu script recibirá el listado "propuesto" filtrado por las reglas de tiempo e intentos  
-    SELECT   
-pb.numero_pedido,  
-        pb.tiendas,  
+    SELECT  
+        pb.numero_pedido,  
+        pb.id_cliente_facturacion,  
         resultado.numero_notificacion  
     FROM pedidos_base pb  
     INNER JOIN (  
-          
+  
         -- NOTIFICACIÓN 1: Pasaron 10 min desde el pedido y nunca se le ha enviado nada de este flujo  
-        SELECT   
-pb.numero_pedido,  
+        SELECT  
+            pb.numero_pedido,  
             1 AS numero_notificacion  
         FROM pedidos_base pb  
         LEFT JOIN historial_notificaciones hn ON pb.numero_pedido COLLATE utf8mb4_unicode_ci = hn.numero_pedido COLLATE utf8mb4_unicode_ci  
-        WHERE hn.numero_pedido IS NULL   
-AND p_fecha_actual >= DATE_ADD(pb.fecha_pedido, INTERVAL 10 MINUTE)  
-          
+        WHERE hn.numero_pedido IS NULL  
+          AND p_fecha_actual >= DATE_ADD(pb.fecha_pedido, INTERVAL 10 MINUTE)  
+  
         UNION ALL  
+  
         -- NOTIFICACIÓN 2: Ya se le envió la primera y pasaron 2 días completos  
-        SELECT   
-pb.numero_pedido,  
+        SELECT  
+            pb.numero_pedido,  
             2 AS numero_notificacion  
         FROM pedidos_base pb  
         INNER JOIN historial_notificaciones hn ON pb.numero_pedido COLLATE utf8mb4_unicode_ci = hn.numero_pedido COLLATE utf8mb4_unicode_ci  
         WHERE hn.total_notificaciones = 1  
           AND p_fecha_actual >= DATE_ADD(hn.fecha_notificacion_1, INTERVAL 2 DAY)  
-            
+  
         UNION ALL  
+  
         -- NOTIFICACIÓN 3: Ya se le envió la segunda y pasaron otros 2 días  
-        SELECT   
-pb.numero_pedido,  
+        SELECT  
+            pb.numero_pedido,  
             3 AS numero_notificacion  
         FROM pedidos_base pb  
         INNER JOIN historial_notificaciones hn ON pb.numero_pedido COLLATE utf8mb4_unicode_ci = hn.numero_pedido COLLATE utf8mb4_unicode_ci  
