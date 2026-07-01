@@ -11,10 +11,14 @@
             "id": "2190ba69f30e1242",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "CRS/new/pedidos/vitaminas/Vitaminas_v1.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Vitaminas_v1"
             }
           }
         ]
@@ -184,11 +188,11 @@
   },
   "active": "2190ba69f30e1242",
   "lastOpenFiles": [
-    "Compra Facil/Legacy/Inventario/Inventario Lima.md",
+    "Sin título.canvas",
     "CRS/new/pedidos/vitaminas/Vitaminas_v1.md",
+    "Compra Facil/Legacy/Inventario/Inventario Lima.md",
     "CRS/new/pedidos/vitaminas/FlujoVitaminas.drawio",
     "CRS/new/pedidos/vitaminas/FlujoVitaminas.png",
-    "Sin título.canvas",
     "Sin título.md",
     "Compra Facil/Legacy/Inventario",
     "Compra Facil/Legacy",
